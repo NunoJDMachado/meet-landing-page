@@ -12,25 +12,36 @@
 
     <title>Frontend Mentor | Meet landing page</title>
 </head>
-<body class="fw-500">
+<body class="text-preset-4 lh-150">
     <div class="header-logo-container">
         <img src="assets/logo.svg" alt="meet logo">
     </div>
 
     <main class="main">
-        <img src="assets/tablet/image-hero.png" alt="Collection of people portrait photos" class="photo-portraits">
+        <!-- <img src="assets/tablet/image-hero.png" alt="Collection of people portrait photos" class="photo-portraits"> -->
+        <picture class="picture-hero-left">
+            <source srcset="assets/desktop/image-hero-left.png" media="(width >= 1024px)">
+            <img src="assets/tablet/image-hero.png" alt="" class="photo-portraits">
+        </picture>
 
-        <h1 class="main-title fw-900">Group Chat for Everyone</h1>
+        <div class="main-content">
+            <h1 class="main-title text-preset-1 lh-110">Group Chat for Everyone</h1>
 
-        <p class="main-text">
-            Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-        </p>
+            <p class="main-text">
+                Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+            </p>
 
-        <a href="#" class="btn btn-primary">
-            Download <span>v1.3</span>
-        </a>
+            <a href="#" class="btn btn-primary">
+                Download <span>v1.3</span>
+            </a>
 
-        <a href="#" class="btn btn-secondary">What is it?</a>
+            <a href="#" class="btn btn-secondary">What is it?</a>
+        </div>
+
+        <picture class="picture-hero-right">
+            <source srcset="assets/desktop/image-hero-right.png" media="(width >= 1024px)">
+            <img alt="something" class="photo-portraits">
+        </picture>
     </main>
 
     <section class="section">
@@ -43,9 +54,9 @@
             <img src="assets/desktop/image-man-texting.jpg" alt="Man texting">
         </div>
 
-        <div class="section-subtitle">Built for modern use</div>
+        <div class="section-subtitle text-preset-3">Built for modern use</div>
 
-        <h1 class="section-title fw-900">Smarter meetings, all in one place</h1>
+        <h2 class="section-title text-preset-2 lh-110">Smarter meetings, all in one place</h2>
 
         <p class="section-text">
             Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
@@ -57,7 +68,7 @@
 
         <div class="footer-bg-color"></div>
 
-        <h2 class="footer-title fw-900">Experience more together</h2>
+        <h2 class="footer-title text-preset-2 lh-110">Experience more together</h2>
 
         <p class="footer-text">
             Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
